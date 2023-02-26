@@ -1,37 +1,37 @@
 const Employee = require('../lib/Employee')
 
-const Nate = new Employee('Nate', '8', 'itsNzte@gmail.com')
+const Luke = new Employee('Luke', '8', 'lukemobob@gmail.com')
 
 // test properties 
 describe('Test to see if Employee values work', () => {
-  const { name, id, email, github } = Nate
+  const { name, id, email, github } = Luke
   
-  it('check Name', () => { expect(name).toBe('Nate') })
+  it('check Name', () => { expect(name).toBe('Luke') })
 
   it('check ID', () => { expect(id).toBe('8') })
 
-  it('check Email', () => { expect(email).toBe('itsNzte@gmail.com') })
+  it('check Email', () => { expect(email).toBe('lukemobob@gmail.com') })
 })
 
 // test methods 
 describe('Test to see if Employee methods work', () => {
   it('check Name', () => {
-    const callName = Nate.getName();
-    expect(callName).toBe('Nate')
+    const callName = Luke.getName();
+    expect(callName).toBe('Luke')
   })
 
   it('check ID', () => {
-    const callId = Nate.getId();
+    const callId = Luke.getId();
     expect(callId).toBe('8')
   })
 
   it('check Email', () => {
-    const callEmail = Nate.getEmail();
-    expect(callEmail).toBe('itsNzte@gmail.com')
+    const callEmail = Luke.getEmail();
+    expect(callEmail).toBe('lukemobob@gmail.com')
   })
 
   it('check role', () => {
-    const role = Nate.getRole()
+    const role = Luke.getRole()
     expect(role).toBe('Employee')
   })
 })
