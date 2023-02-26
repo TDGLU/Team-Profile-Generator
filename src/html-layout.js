@@ -1,3 +1,5 @@
+// js file to retrieve each role's card data to pass in through the html layout
+
 function htmlLayout(manager, engineer, intern) {
   let layout = `
 <!DOCTYPE html>
