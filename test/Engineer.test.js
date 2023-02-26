@@ -1,6 +1,6 @@
 const Engineer = require('../lib/Engineer')
 
-const Nate = new Engineer('Luke', '8', 'lukemobob@gmail.com', 'TDGNate')
+const Luke = new Engineer('Luke', '8', 'lukemobob@gmail.com', 'TDGLuke')
 
 // test properties 
 describe('check if Engineer Values work', () => {
@@ -19,26 +19,26 @@ describe('check if Engineer Values work', () => {
 describe('check if Engineer Methods work', () => {
   it('check Name', () => {
     const callName = Luke.getName();
-    expect(callName).toBe('Nate')
+    expect(callName).toBe('Luke')
   })
 
   it('check ID', () => {
-    const callId = Nate.getId();
+    const callId = Luke.getId();
     expect(callId).toBe('8')
   })
 
   it('check Email', () => {
-    const callEmail = Nate.getEmail();
-    expect(callEmail).toBe('itsNzte@gmail.com')
+    const callEmail = Luke.getEmail();
+    expect(callEmail).toBe('lukemobob@gmail.com')
   })
 
   it('check Github', () => {
-    const callGithub = Nate.getGithub()
-    expect(callGithub).toBe('TDGNate')
+    const callGithub = Luke.getGithub()
+    expect(callGithub).toBe('TDGLuke')
   })
 
   it('check role', () => {
-    const role = Nate.getRole()
+    const role = Luke.getRole()
     expect(role).toBe('Engineer')
   })
 })
