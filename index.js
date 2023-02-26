@@ -1,6 +1,13 @@
 const inquirer = require("inquirer")
 const fs = require('fs')
 
+// Importing lib files 
+const Employee = require('./lib/Employee')
+const Manager = require('./lib/Manager')
+const Engineer = require('./lib/Engineer')
+const Intern = require('./lib/Intern')
+
+// Manager questions 
 const managerQuestions = [
   {
     type: "input",
@@ -32,3 +39,17 @@ const menu = [
     name: "menu",
   }
 ]
+
+function initialize() {
+  inquirer
+  .prompt(managerQuestions)
+  .then((data) => {
+    // console.log(data)
+  })
+  let appRunning = true;
+  while (appRunning) {
+
+  }
+}
+
+initialize()
