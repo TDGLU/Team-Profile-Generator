@@ -1,12 +1,12 @@
 const Manager = require('../lib/Manager')
 
-const Nate = new Manager('Nate', '8', 'lukemobob@gmail.com', '123')
+const Luke = new Manager('Luke', '8', 'lukemobob@gmail.com', '123')
 
 // test properties 
 describe('check if Manager Values work', () => {
-  const { name, id, email, officeNumber } = Nate
+  const { name, id, email, officeNumber } = Luke
   
-  it('check Name', () => { expect(name).toBe('Nate') })
+  it('check Name', () => { expect(name).toBe('Luke') })
 
   it('check ID', () => { expect(id).toBe('8') })
 
@@ -18,27 +18,27 @@ describe('check if Manager Values work', () => {
 // test methods 
 describe('check if Manager Methods work', () => {
   it('check Name', () => {
-    const callName = Nate.getName();
-    expect(callName).toBe('Nate')
+    const callName = Luke.getName();
+    expect(callName).toBe('Luke')
   })
 
   it('check ID', () => {
-    const callId = Nate.getId();
+    const callId = Luke.getId();
     expect(callId).toBe('8')
   })
 
   it('check Email', () => {
-    const callEmail = Nate.getEmail();
+    const callEmail = Luke.getEmail();
     expect(callEmail).toBe('lukemobob@gmail.com')
   })
 
   it('check School', () => {
-    const callOfficeNum = Nate.getOfficeNum();
+    const callOfficeNum = Luke.getOfficeNum();
     expect(callOfficeNum).toBe('123')
   })
 
   it('check role', () => {
-    const role = Nate.getRole();
+    const role = Luke.getRole();
     expect(role).toBe('Manager')
   })
 })
